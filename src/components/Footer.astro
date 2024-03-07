@@ -1,0 +1,56 @@
+---
+const years = new Date().getFullYear();
+---
+
+<footer class="bg-[#FDCEDF] dark:bg-gray-900 opacity-90">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="/" class="flex items-center">
+          <img src="https://res.cloudinary.com/dszhlpm81/image/upload/v1709444372/assets/phKFNpB7tMHUeEMuMCiMoTyH4rJTs3vp/favicon_phha7v.ico" class="lg:w-16 w-14 lg:h-16 h-14 rounded-full" fetchpriority="low" alt="May Beauty Skin Logo" />
+          <span class="self-center text-2xl font-semibold ml-2 whitespace-nowrap dark:text-gray-100">May Beauty Skin</span>
+        </a>
+        <div class="grid mt-4 sm:justify-center sm:mt-0">
+          <p class="dark:text-gray-100">Jln Timoho No. 129, Gondokusuman, Kota</p>
+          <p class="dark:text-gray-100">Yogyakarta, D.I Yogyakarta 55221</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+          <ul class="text-black font-medium">
+            <li class="mb-4">
+              <a href="https://flowbite.com/" class="hover:underline decoration-solid decoration-black dark:text-gray-100 dark:decoration-white underline-offset-2" target="_blank"> Flowbite</a>
+            </li>
+            <li>
+              <a href="https://tailwindcss.com/" class="hover:underline decoration-solid decoration-black dark:text-gray-100 dark:decoration-white underline-offset-2" target="_blank"> Tailwind CSS</a>
+            </li>
+            <li class="mt-4">
+              <a href="https://astro.build/" class="hover:underline decoration-solid decoration-black dark:text-gray-100 dark:decoration-white underline-offset-2" target="_blank"> Astro</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+          <ul class="text-black font-medium">
+            <li class="mb-4">
+              <a href="https://www.instagram.com/maybeauty.skin/" class="hover:underline decoration-solid decoration-black dark:text-gray-100 dark:decoration-white underline-offset-2" target="_blank"> Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline decoration-solid decoration-black dark:text-gray-100 dark:decoration-white underline-offset-2" target="_blank"> TikTok</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-black sm:mx-auto lg:my-8 dark:border-gray-100" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-black sm:texblack dark:text-gray-100">
+        <span class="font-roboto">©</span>
+        {years}
+        <a href="https://www.irvanshandika.my.id/" class="hover:underline ml-1">Irvan Dev</a>
+        . All Rights Reserved.
+      </span>
+    </div>
+  </div>
+</footer>
