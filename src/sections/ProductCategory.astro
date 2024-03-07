@@ -11,12 +11,12 @@ import { productCategories } from "../data/ProductList";
       <div class="flex lg:flex-row flex-col justify-center items-center lg:gap-3 gap-8">
         {
           productCategories.map((items) => (
-            <div class="lg:w-[350px] w-[350px] bg-white border border-gray-200 rounded-lg shadow">
+            <div class="lg:w-[350px] w-[350px] lg:pt-4 pt-4 bg-[#FFEEF4] border border-none rounded-lg shadow dark:bg-gray-800">
               <div class="flex justify-center">
-                <img class="rounded-lg" src={items.image} class="mt-4" width="250" height="250" alt={items.alt} />
+                <img src={items.image} class="mt-4 rounded-lg lg:w-64 lg:h-64 w-72 h-72" alt={items.alt} />
               </div>
               <div class="p-5">
-                <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{items.name}</h1>
+                <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">{items.name}</h1>
                 <div class="my-3">
                   <span class="bg-green-200 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded">{items.category}</span>
                 </div>
