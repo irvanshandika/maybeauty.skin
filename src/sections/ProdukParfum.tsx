@@ -10,11 +10,11 @@ const ProductList: React.FC = () => {
           <div className="flex justify-center mb-5">
             <h2 className="lg:text-3xl text-2xl font-semibold dark:text-gray-100">List Produk Parfum</h2>
           </div>
-          <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-3 gap-8">
+          <div className="lg:grid flex flex-col justify-center items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
             {Parfum.map((item) => (
               <div key={item.name} className="lg:w-[350px] w-[350px] lg:pt-4 pt-4 bg-[#FFEEF4] border border-none rounded-lg shadow dark:bg-gray-800">
                 <div className="flex justify-center">
-                  <img src={item.images} className="mt-4 rounded-lg lg:w-64 lg:h-64 w-72 h-72" alt={item.alt} fetchPriority="low" />
+                  <img src={item.images} className="lg:mt-2 mt-4 rounded-lg lg:w-80 lg:h-80 w-72 h-72" alt={item.alt} fetchPriority="low" />
                 </div>
                 <div className="p-5">
                   <h1 className="mb-2 font-bold tracking-tight text-base text-gray-900 dark:text-gray-100">{item.name}</h1>

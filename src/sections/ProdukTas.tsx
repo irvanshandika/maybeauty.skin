@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import the Pakaian array
-import { Pakaian } from "../data/Produk";
+import { Tas } from "../data/Produk";
 
 // Create a functional component for rendering the list of products
 const ProductList: React.FC = () => {
@@ -11,10 +11,10 @@ const ProductList: React.FC = () => {
       <section>
         <div className="block max-w-7xl py-28 mx-auto lg:text-xl">
           <div className="flex justify-center mb-5">
-            <h2 className="lg:text-3xl text-2xl font-semibold dark:text-gray-100">List Produk Pakaian</h2>
+            <h2 className="lg:text-3xl text-2xl font-semibold dark:text-gray-100">List Produk Tas</h2>
           </div>
           <div className="lg:grid flex flex-col justify-center items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            {Pakaian.map((item) => (
+            {Tas.map((item) => (
               <div key={item.name} className="lg:w-[350px] w-[350px] lg:pt-4 pt-4 bg-[#FFEEF4] border border-none rounded-lg shadow dark:bg-gray-800">
                 <div className="flex justify-center">
                   <img src={item.images} className="lg:mt-2 mt-4 rounded-lg lg:w-80 lg:h-80 w-72 h-72" alt={item.alt} fetchPriority="low" />
