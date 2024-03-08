@@ -1,19 +1,19 @@
 export const productList = [
   {
     name: "Parfum",
-    url: "parfum",
+    url: "/parfum",
   },
   {
     name: "Pakaian",
-    url: "pakaian",
+    url: "/pakaian",
   },
   {
     name: "Tas",
-    url: "tas",
+    url: "/tas",
   },
   {
     name: "Perawatan & Kecantikan",
-    url: "perawatan",
+    url: "/perawatan",
   },
 ];
 
