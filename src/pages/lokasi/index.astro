@@ -1,0 +1,20 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Lokasi">
+  <Navbar />
+  <div class="flex justify-center h-screen items-center">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0185540920265!2d110.39163197455392!3d-7.787857077282337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a595a0001861b%3A0x58d33ba26eaadabb!2sMaybeauty.Skin!5e0!3m2!1sen!2sid!4v1709854652925!5m2!1sen!2sid"
+      height="600"
+      class="mt-20 w-full"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <Footer />
+</Layout>
