@@ -17,10 +17,10 @@ const ProductList: React.FC = () => {
             {Perawatan.map((item) => (
               <div key={item.name} className="lg:w-[350px] w-[350px] lg:pt-4 pt-4 bg-[#FFEEF4] border border-none rounded-lg shadow dark:bg-gray-800">
                 <div className="flex justify-center">
-                  <img src={item.images} className="lg:mt-2 mt-4 rounded-lg lg:w-80 lg:h-80 w-72 h-72" alt={item.alt} fetchPriority="low" />
+                  <img src={item.images} className="lg:mt-2 mt-4 rounded-lg lg:w-80 lg:h-80 w-72 h-72" alt={item.alt} fetchPriority="auto" />
                 </div>
                 <div className="p-5">
-                  <h1 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">{item.name}</h1>
+                  <h1 className="mb-2 text-base font-bold tracking-tight text-gray-900 dark:text-gray-100">{item.name}</h1>
                   <div className="my-3">
                     <span className={`text-xs font-medium px-2.5 py-0.5 rounded ${item.statusProduk === "Tidak Tersedia" ? "bg-red-500 text-white" : "bg-green-500 text-white"}`}>{item.statusProduk}</span>
                   </div>
