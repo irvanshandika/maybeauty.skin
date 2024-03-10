@@ -21,7 +21,9 @@ const ProductList: React.FC = () => {
                   <div className="my-3">
                     <span className={`text-xs font-medium px-2.5 py-0.5 rounded ${item.statusProduk === "Tidak Tersedia" ? "bg-red-500 text-white" : "bg-green-500 text-white"}`}>{item.statusProduk}</span>
                   </div>
-                  <a href={item.url} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                  <a
+                    href={item.statusProduk === "Tidak Tersedia" ? "Sold Out" : item.url}
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
                     Lihat Produk
                     <svg xmlns="http://www.w3.org/2000/svg" className="rtl:rotate-180 w-5 h-5 ms-2" viewBox="0 0 24 24">
                       <g fill="none">
