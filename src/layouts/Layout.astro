@@ -21,12 +21,13 @@ const { title } = Astro.props;
   </head>
   <body class="bg-[#f8e8ee] dark:bg-gray-950 font-google">
     <slot />
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6XZMN2B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script src="../index.js"></script>
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@loglib/tracker@latest/dist/index.global.js" data-id="www_maybeautyskin_my"></script>
   </body>
 </html>
 <script>
-  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
   if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
     document.documentElement.classList.add("dark");
   } else {

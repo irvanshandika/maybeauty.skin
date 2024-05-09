@@ -25,6 +25,10 @@
         "destination": "/tas/index.html"
       },
       {
+        "source": "/tugas",
+        "destination": "/tugas/index.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
