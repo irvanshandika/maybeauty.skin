@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { Card } from "@mantine/core";
 
 function StorePoint() {
   return (
@@ -13,24 +14,32 @@ function StorePoint() {
             <p className="mt-4 text-lg text-gray-600">Temukan solusi terbaik untuk merawat kulitmu dengan beragam produk unggulan dari kami. Jangan ragu lagi, mulailah perjalanan menuju kulit yang lebih sehat dan bercahaya.</p>
             <div className="w-96 h-80 flex-col justify-start items-start gap-8 inline-flex">
               <div className="self-stretch justify-start items-start gap-8 inline-flex">
-                <div className="grow shrink basis-0 p-8 bg-white rounded-3xl border border-gray-900/opacity-10 flex-col justify-start items-center gap-4 inline-flex">
-                  <div className="text-red-300 text-4xl font-bold leading-10">200+</div>
-                  <div className="text-gray-900 text-lg font-normal leading-7">Products</div>
-                </div>
-                <div className="grow shrink basis-0 p-8 bg-white rounded-3xl border border-gray-900/opacity-10 flex-col justify-start items-center gap-4 inline-flex">
-                  <div className="text-red-300 text-4xl font-bold leading-10">35+</div>
-                  <div className="text-gray-900 text-lg font-normal leading-7">Skincare Brand</div>
-                </div>
+                <Card shadow="sm" padding="50px" radius="32" withBorder>
+                  <div className="flex flex-col justify-center items-center">
+                    <h2 className="font-bold text-[#F29393]">200+</h2>
+                    <p className="font-normal">Product</p>
+                  </div>
+                </Card>
+                <Card shadow="sm" padding="50px" radius="32" withBorder>
+                  <div className="flex flex-col justify-center items-center">
+                    <h2 className="font-bold text-[#F29393]">35+</h2>
+                    <p className="font-normal text-sm">Skincare Brand</p>
+                  </div>
+                </Card>
               </div>
               <div className="self-stretch justify-start items-start gap-8 inline-flex">
-                <div className="grow shrink basis-0 p-8 bg-white rounded-3xl border border-gray-900/opacity-10 flex-col justify-start items-center gap-4 inline-flex">
-                  <div className="text-red-300 text-4xl font-bold leading-10">15</div>
-                  <div className="text-gray-900 text-lg font-normal leading-7">Skincare Category</div>
-                </div>
-                <div className="grow shrink basis-0 p-8 bg-white rounded-3xl border border-gray-900/opacity-10 flex-col justify-start items-center gap-4 inline-flex">
-                  <div className="text-red-300 text-4xl font-bold leading-10">2k+</div>
-                  <div className="text-gray-900 text-lg font-normal leading-7">Happy Customer</div>
-                </div>
+                <Card shadow="sm" padding="50px" radius="32" withBorder>
+                  <div className="flex flex-col justify-center items-center">
+                    <h2 className="font-bold text-[#F29393]">15</h2>
+                    <p className="font-normal">Skincare Category</p>
+                  </div>
+                </Card>
+                <Card shadow="sm" padding="50px" radius="32" withBorder>
+                  <div className="flex flex-col justify-center items-center">
+                    <h2 className="font-bold text-[#F29393]">2K+</h2>
+                    <p className="font-normal">Happy Customer</p>
+                  </div>
+                </Card>
               </div>
             </div>
           </div>
