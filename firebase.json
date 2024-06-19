@@ -1,13 +1,21 @@
 {
   "hosting": {
     "site": "maybeautyskin",
-    "public": "dist",
+    "public": "out",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
+      {
+        "source": "/ourteam",
+        "destination": "/ourteam.html"
+      },
+      {
+        "source": "*",
+        "destination": "/404.html"
+      },
       {
         "source": "**",
         "destination": "/index.html"
