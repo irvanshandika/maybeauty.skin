@@ -9,10 +9,10 @@ import SKIIIcon from "@components/icons/SKIIIcon";
 function Sponsor() {
   return (
     <>
-      <section className="lg:mt-[180px] mt-[-10vh] lg:mb-[100px] mb-[-3vh] relative">
+      <section className="lg:mt-[180px] mt-[-1vh] lg:mb-[100px] mb-[-3vh] relative">
         <img className="absolute right-0 lg:-translate-y-[60vh]" src="https://res.cloudinary.com/dszhlpm81/image/upload/v1717653450/assets/phKFNpB7tMHUeEMuMCiMoTyH4rJTs3vp/Ellipse_24_gm09wr.png" alt="Decoration" />
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-          <div className="w-2/3 sm:w-1/2 lg:w-1/3 lg:-translate-x-[80px] translate-y-[150px] mb-6">
+          <div className="absolute w-2/3 sm:w-1/2 lg:w-1/3 lg:-translate-x-[80px] translate-y-[-60px] mb-6">
             <svg className="lg:w-[65px] lg:h-[171px] w-[30px] h-[169.95px]" viewBox="0 0 65 171" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_832_1216)">
                 <path d="M44.0254 170.703L65 170.703L54.5127 160.216L44.0254 170.703Z" fill="#F29393"></path>
@@ -44,7 +44,7 @@ function Sponsor() {
             <div className="flex items-center justify-center">
               <MayBellineIcon />
             </div>
-            <div className="flex items-center justify-center lg:p-0 p-4">
+            <div className="flex items-center justify-center lg:p-0 p-8">
               <LOrealIcon />
             </div>
             <div className="flex items-center justify-center">
