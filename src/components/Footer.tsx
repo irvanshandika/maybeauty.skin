@@ -4,6 +4,7 @@
 import { Text, Container, ActionIcon, Group, rem } from "@mantine/core";
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from "@tabler/icons-react";
 import classes from "./Footer.module.css";
+import { useRouter } from "next/navigation";
 
 const data = [
   {
@@ -36,6 +37,9 @@ const data = [
 
 export default function Footer() {
   const years = new Date().getFullYear();
+  const router = useRouter();
+
+  // eslint-disable-next-line @next/next/no-img-element
 
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
@@ -56,7 +60,13 @@ export default function Footer() {
     <>
       <div className="flex justify-center items-center">
         <div className="lg:w-[1158px] lg:h-[447px] size-[360px] relative bg-[#F29393] bg-opacity-20 lg:rounded-[60px] rounded-3xl gap-10">
-          <img className="absolute lg:w-[183.86px] lg:h-[176.35px] size-[80px] lg:translate-x-[-30px] lg:translate-y-[-53px]" src="https://res.cloudinary.com/dszhlpm81/image/upload/v1718509679/assets/phKFNpB7tMHUeEMuMCiMoTyH4rJTs3vp/Graphic_Elements_b6nq3m.png" alt="Decoration" fetchPriority="high" loading="lazy" />
+          <img
+            className="absolute lg:w-[183.86px] lg:h-[176.35px] size-[80px] lg:translate-x-[-30px] lg:translate-y-[-53px]"
+            src="https://res.cloudinary.com/dszhlpm81/image/upload/v1718509679/assets/phKFNpB7tMHUeEMuMCiMoTyH4rJTs3vp/Graphic_Elements_b6nq3m.png"
+            alt="Decoration"
+            fetchPriority="high"
+            loading="lazy"
+          />
           <div className="flex flex-col justify-center items-center h-full gap-8">
             <h2 className="lg:text-2xl text-xl font-bold text-[#F675A8] lg:leading-7 lg:tracking-widest">CHECK OUT NOW!</h2>
             <h2 className="lg:text-5xl text-lg font-bold text-center lg:leading-10">Toko skincare terbaik di Yogyakarta yang murah, lengkap dan terpercaya.</h2>
@@ -89,7 +99,7 @@ export default function Footer() {
               <ActionIcon size="lg" color="gray" variant="subtle">
                 <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
               </ActionIcon>
-              <ActionIcon size="lg" color="gray" variant="subtle">
+              <ActionIcon size="lg" color="gray" variant="subtle" onClick={() => router.push("https://www.instagram.com/maybeauty.skin/")}>
                 <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
               </ActionIcon>
             </Group>
