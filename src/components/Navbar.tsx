@@ -70,6 +70,9 @@ function Navbar() {
               <a className="font-medium text-gray-600 hover:text-gray-400" href="#location">
                 Location
               </a>
+              <a className="font-medium text-gray-600 hover:text-gray-400" href="/ourteam">
+                Our Team
+              </a>
             </div>
           </div>
         </nav>
