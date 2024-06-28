@@ -62,8 +62,8 @@ const TestimonialCarousel: React.FC = () => {
             />
             <defs>
               <linearGradient id="paint0_linear_832_27" x1="406.392" y1="114.937" x2="562.407" y2="1060.8" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#554994" />
-                <stop offset="1" stop-color="#F675A8" />
+                <stop stopColor="#554994" />
+                <stop offset="1" stopColor="#F675A8" />
               </linearGradient>
             </defs>
           </svg>
