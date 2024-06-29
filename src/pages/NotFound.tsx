@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@mantine/core";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 function NotFound() {
-  const [t] = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage);
+    }
+  }, [i18n]);
   return (
     <>
+      <Helmet>
+        <title>{t("NotFound.title")} | MayBeautySkin</title>
+        <meta name="description" content={t("NotFound.deskripsi")} />
+      </Helmet>
       <section className="h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800">404</h1>

@@ -1,8 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { useEffect } from "react";
 import { Text, Container, ActionIcon, Group, rem } from "@mantine/core";
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from "@tabler/icons-react";
 import classes from "./Footer.module.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
@@ -37,6 +39,15 @@ export default function Footer() {
   const years = new Date().getFullYear();
   const navigation = useNavigate();
 
+  const { t, i18n } = useTranslation("global");
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage);
+    }
+  }, [i18n]);
+
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
       <Text<"a"> key={index} className={classes.link} component="a" href={link.link} onClick={(event) => event.preventDefault()}>
@@ -68,7 +79,7 @@ export default function Footer() {
               <p className="text-gray-900 text-xl font-bold leading-7">May Beauty Skin</p>
             </div>
             <Text size="md" c="dimmed" className={classes.description}>
-              Toko skincare terbaik di Yogyakarta yang murah, lengkap dan terpercaya.
+              {t("Footer.subjudul")}
             </Text>
             <Group gap={0} className={`mt-5 ${classes.social}`} justify="flex-center" wrap="nowrap">
               <ActionIcon size="lg" color="gray" variant="subtle">

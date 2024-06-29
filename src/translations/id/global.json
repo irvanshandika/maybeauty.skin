@@ -10,6 +10,7 @@
     "ctaButton": "Dapatkan Sekarang"
   },
   "NotFound": {
+    "title": "404 Halaman Tidak Ditemukan",
     "judul": "404",
     "deskripsi": "Halaman yang kamu cari tidak ditemukan",
     "ctaButton": "Kembali ke Beranda"
@@ -53,5 +54,13 @@
   "CtaSection": {
     "deskripsi": "Toko skincare terbaik di Yogyakarta yang murah, lengkap dan terpercaya.",
     "ctaButton": "Dapatkan Sekarang"
+  },
+  "OurTeam": {
+    "title": "Tim Digital Bisnis",
+    "judul": "Tim Digital Bisnis",
+    "deskripsi": "Kami adalah tim digital bisnis yang bergerak di bidang pengembangan website. Kami siap membantu anda dalam mengembangkan bisnis anda."
+  },
+  "Footer": {
+    "subjudul": "Toko skincare terbaik di Yogyakarta yang murah, lengkap dan terpercaya."
   }
 }

@@ -10,6 +10,7 @@
     "ctaButton": "Get Now"
   },
   "NotFound": {
+    "title": "404 Page Not Found",
     "judul": "404",
     "deskripsi": "The page you are looking for is not found",
     "ctaButton": "Back to Home"
@@ -53,5 +54,13 @@
   "CtaSection": {
     "deskripsi": "The best skincare store in Yogyakarta that is cheap, complete and reliable.",
     "ctaButton": "Get Now"
+  },
+  "OurTeam": {
+    "title": "Digital Business Team",
+    "judul": "Digital Business Team",
+    "deskripsi": "We are a team of digital business that is ready to help you in developing your business. We provide the best solutions for your business needs."
+  },
+  "Footer": {
+    "subjudul": "The best skincare store in Yogyakarta that is cheap, complete and reliable."
   }
 }

@@ -25,6 +25,7 @@ function Home() {
     <>
       <Helmet>
         <title>{t("Home.title")} | MayBeautySkin</title>
+        <meta name="description" content={t("Home.deskripsi")} />
       </Helmet>
       <Hero />
       <Sponsor />
