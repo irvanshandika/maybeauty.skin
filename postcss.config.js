@@ -1,8 +1,7 @@
-/* eslint-disable import/no-anonymous-default-export */
-/** @type {import('postcss-load-config').Config} */
-const config = {
+export default {
   plugins: {
     tailwindcss: {},
+    autoprefixer: {},
     "postcss-preset-mantine": {},
     "postcss-simple-vars": {
       variables: {
@@ -15,5 +14,3 @@ const config = {
     },
   },
 };
-
-export default config;

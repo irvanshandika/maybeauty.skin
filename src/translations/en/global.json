@@ -1,0 +1,53 @@
+{
+  "Home": {
+    "title": "Welcome to MayBeautySkin"
+  },
+  "hero": {
+    "judul1": "Store",
+    "hightlight": "best skincare",
+    "judul2": "in Yogyakarta",
+    "deskripsi": "Feeling insecure about your appearance? Don't worry, we have the solution.",
+    "ctaButton": "Get Now"
+  },
+  "NotFound": {
+    "judul": "404",
+    "deskripsi": "The page you are looking for is not found",
+    "ctaButton": "Back to Home"
+  },
+  "Navbar": {
+    "home": "Home",
+    "offers": "Offers",
+    "product": "Product",
+    "location": "Location",
+    "ourteam": "Our Team"
+  },
+  "Pelayanan": {
+    "judul": "Attractive benefits just for you.",
+    "pelayanan1": "Cheap",
+    "deskripsi1": "Affordable prices for quality products, taking care of your skin without putting a strain on your wallet.",
+    "pelayanan2": "Complete Products",
+    "deskripsi2": "No need to look in other stores, everything you need is here.",
+    "pelayanan3": "Trusted",
+    "deskripsi3": "Guaranteed products, you don't have to worry about shopping here.Guaranteed products, you don't have to worry about shopping here."
+  },
+  "Product": {
+    "title": "Best-selling skincare products"
+  },
+  "StorePoint": {
+    "discount": "Discounted Price",
+    "judul": "Want to look beautiful with healthy skin?",
+    "deskripsi": "Find the best solution to take care of your skin with our range of superior products. Don't hesitate anymore, start the journey towards healthier and glowing skin.",
+    "produk": "Products",
+    "brand": "Skincare Brand",
+    "category": "Skincare Categories",
+    "customer": "Happy Customers"
+  },
+  "Testimoni": {
+    "title": "What do they say?"
+  },
+  "Location": {
+    "location": "Location",
+    "subjudul": "Go straight to the store",
+    "address": "Jl. Timoho No.129, Demangan, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55221"
+  }
+}

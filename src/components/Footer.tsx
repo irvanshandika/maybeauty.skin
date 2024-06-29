@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-"use client";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Text, Container, ActionIcon, Group, rem } from "@mantine/core";
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from "@tabler/icons-react";
 import classes from "./Footer.module.css";
-import { useRouter } from "next/navigation";
+import { useNavigate } from "react-router-dom";
 
 const data = [
   {
@@ -37,9 +35,7 @@ const data = [
 
 export default function Footer() {
   const years = new Date().getFullYear();
-  const router = useRouter();
-
-  // eslint-disable-next-line @next/next/no-img-element
+  const navigation = useNavigate();
 
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
@@ -99,7 +95,7 @@ export default function Footer() {
               <ActionIcon size="lg" color="gray" variant="subtle">
                 <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
               </ActionIcon>
-              <ActionIcon size="lg" color="gray" variant="subtle" onClick={() => router.push("https://www.instagram.com/maybeauty.skin/")}>
+              <ActionIcon size="lg" color="gray" variant="subtle" onClick={() => navigation("https://www.instagram.com/maybeauty.skin/")}>
                 <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
               </ActionIcon>
             </Group>

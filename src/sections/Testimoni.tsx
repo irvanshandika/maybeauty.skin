@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-"use client";
-import React, { useRef } from "react";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { useEffect } from "react";
 import { Carousel, Embla } from "@mantine/carousel";
 import { Rating } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 
 interface Testimonial {
   name: string;
@@ -37,19 +37,14 @@ const testimonials: Testimonial[] = [
 ];
 
 const TestimonialCarousel: React.FC = () => {
-  const carouselRef = useRef<Embla | null>(null);
+  const { t, i18n } = useTranslation("global");
 
-  const handlePrev = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollPrev();
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage);
     }
-  };
-
-  const handleNext = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollNext();
-    }
-  };
+  }, [i18n]);
 
   return (
     <>
@@ -70,7 +65,7 @@ const TestimonialCarousel: React.FC = () => {
         </div>
         <div className="flex flex-col justify-center items-center z-auto">
           <p className="text-xl font-semibold text-pink-400 mb-4 uppercase">Testimonials</p>
-          <h2 className="text-4xl font-bold text-center mb-4">Apa kata mereka?</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">{t("Testimoni.title")}</h2>
         </div>
         <div className="w-full max-w-4xl mx-auto lg:py-10 py-11 z-50">
           <Carousel slideSize="70%" align="center" height={200} slideGap="md" controlsOffset="xl" loop dragFree withIndicators>

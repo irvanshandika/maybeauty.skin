@@ -1,0 +1,53 @@
+{
+  "Home": {
+    "title": "Selamat Datang Di MayBeautySkin"
+  },
+  "hero": {
+    "judul1": "Toko",
+    "hightlight": "skincare terbaik",
+    "judul2": "di Yogyakarta",
+    "deskripsi": "Merasa tidak percaya diri dengan penampilan kamu? Jangan khawatir, kami punya solusinya.",
+    "ctaButton": "Dapatkan Sekarang"
+  },
+  "NotFound": {
+    "judul": "404",
+    "deskripsi": "Halaman yang kamu cari tidak ditemukan",
+    "ctaButton": "Kembali ke Beranda"
+  },
+  "Navbar": {
+    "home": "Beranda",
+    "offers": "Penawaran",
+    "product": "Produk",
+    "location": "Lokasi",
+    "ourteam": "Tim Kami"
+  },
+  "Pelayanan": {
+    "judul": "Keuntungan menarik hanya untukmu",
+    "pelayanan1": "Murah",
+    "deskripsi1": "Harga terjangkau untuk produk berkualitas, merawat kulit tanpa harus membebani dompetmu.",
+    "pelayanan2": "Lengkap",
+    "deskripsi2": "Tak perlu cari di toko lain, semua yang kamu butuhkan ada disini.",
+    "pelayanan3": "Terpercaya",
+    "deskripsi3": "Produk terjamin, kamu tidak perlu khawatir belanja disini."
+  },
+  "Product": {
+    "title": "Produk skincare terlaris"
+  },
+  "StorePoint": {
+    "discount": "Potongan Harga",
+    "judul": "Ingin tampil cantik dengan kulit sehat?",
+    "deskripsi": "Temukan solusi terbaik untuk merawat kulitmu dengan beragam produk unggulan dari kami. Jangan ragu lagi, mulailah perjalanan menuju kulit yang lebih sehat dan bercahaya.",
+    "produk": "Produk",
+    "brand": "Merek Skincare",
+    "category": "Kategori Skincare",
+    "customer": "Pelanggan Bahagia"
+  },
+  "Testimoni": {
+    "title": "Apa kata mereka?"
+  },
+  "Location": {
+    "location": "Lokasi",
+    "subjudul": "Langsung ke toko aja",
+    "address": "Jl. Timoho No.129, Demangan, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55221"
+  }
+}

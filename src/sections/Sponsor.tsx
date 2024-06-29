@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import WardahIcon from "@components/icons/WardahIcon";
 import OlayIcon from "@components/icons/OlayIcon";

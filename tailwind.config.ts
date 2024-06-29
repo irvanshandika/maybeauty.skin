@@ -1,7 +1,12 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
-const config: Config = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}", "./src/**/*.{js,ts,jsx,tsx,mdx}", "./node_modules/preline/preline.js"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/preline/preline.js",
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -9,6 +14,8 @@ const config: Config = {
       }
     },
   },
-  plugins: [require("preline/plugin")],
-};
-export default config;
+  plugins: [
+    require("preline/plugin"),
+    require('flowbite/plugin')
+  ],
+} satisfies Config

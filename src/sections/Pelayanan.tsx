@@ -1,21 +1,28 @@
-"use client";
-import React from "react";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { useEffect } from "react";
 import { Carousel } from "@mantine/carousel";
 import { Card, Text } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 
 function Pelayanan() {
+  const { t, i18n } = useTranslation("global");
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage);
+    }
+  }, [i18n]);
   return (
     <>
       <section className="my-14 z-0" id="offers">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto my-10 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:mt-0 mt-10 lg:col-span-7">
             <p className="mt-3 text-lg font-bold text-[#F675A8]">OFFERS</p>
-            <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">
-              Keuntungan menarik hanya untukmu
-            </h1>
+            <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">{t("Pelayanan.judul")}</h1>
           </div>
           <div className="flex justify-center lg:mt-0 lg:col-span-5 lg:flex order-1 lg:order-2 overflow-x-hidden">
-            <Carousel slideSize="70%" height={350} slideGap="md" controlsOffset="xl" loop dragFree>
+            <Carousel slideSize="70%" height={350} slideGap="xl" controlsOffset="xl" dragFree>
               {/* Slide 1 */}
               <Carousel.Slide>
                 <div className="translate-y-[40px]">
@@ -33,10 +40,10 @@ function Pelayanan() {
                     </Card.Section>
                     <Card.Section>
                       <Text size="xl" style={{ marginTop: "1rem" }}>
-                        Murah
+                        {t("Pelayanan.pelayanan1")}
                       </Text>
                       <Text size="lg" style={{ marginTop: "0.5rem" }}>
-                        Harga terjangkau untuk produk berkualitas, merawat kulit tanpa harus membebani dompetmu.
+                      {t("Pelayanan.deskripsi1")}
                       </Text>
                     </Card.Section>
                   </Card>
@@ -59,10 +66,10 @@ function Pelayanan() {
                     </Card.Section>
                     <Card.Section>
                       <Text size="xl" style={{ marginTop: "1rem" }}>
-                        Lengkap
+                      {t("Pelayanan.pelayanan2")}
                       </Text>
                       <Text size="lg" style={{ marginTop: "0.5rem" }}>
-                        Tak perlu cari di toko lain, semua yang kamu butuhkan ada disini.
+                      {t("Pelayanan.deskripsi2")}
                       </Text>
                     </Card.Section>
                   </Card>
@@ -84,10 +91,10 @@ function Pelayanan() {
                     <Card.Section>
                       <div className=" flex flex-col justify-center items-center">
                         <Text size="xl" style={{ marginTop: "1rem" }}>
-                          Terpercaya
+                        {t("Pelayanan.pelayanan3")}
                         </Text>
                         <Text size="lg" style={{ marginTop: "0.5rem" }}>
-                          Produk terjamin, kamu tidak perlu khawatir belanja disini.
+                        {t("Pelayanan.deskripsi3")}
                         </Text>
                       </div>
                     </Card.Section>

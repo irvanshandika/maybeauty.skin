@@ -1,29 +1,37 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-import React from "react";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { useEffect } from "react";
 import { Card } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 
 function StorePoint() {
+  const { t, i18n } = useTranslation("global");
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage);
+    }
+  }, [i18n]);
   return (
     <>
       <section className="my-14 overflow-x-hidden" id="storepoint">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto my-10 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="lg:translate-x-[6vw] place-self-center lg:mt-0 mt-10 lg:col-span-7 order-1 lg:order-2">
             <p className="mt-3 text-lg font-bold text-[#F675A8]">Store Point</p>
-            <h2 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">Ingin tampil cantik dengan kulit sehat?</h2>
-            <p className="mt-4 text-lg text-gray-600">Temukan solusi terbaik untuk merawat kulitmu dengan beragam produk unggulan dari kami. Jangan ragu lagi, mulailah perjalanan menuju kulit yang lebih sehat dan bercahaya.</p>
+            <h2 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">{t("StorePoint.judul")}</h2>
+            <p className="mt-4 text-lg text-gray-600">{t("StorePoint.deskripsi")}</p>
             <div className="w-96 h-80 flex-col justify-center items-center gap-8 inline-flex">
               <div className="self-stretch justify-center items-center lg:gap-8 gap-4 inline-flex mt-[100px] lg:mr-0 mr-5">
                 <Card shadow="sm" padding="50px" radius="32" withBorder>
                   <div className="flex flex-col justify-center items-center">
                     <h2 className="font-bold text-[#F29393]">200+</h2>
-                    <p className="font-normal">Product</p>
+                    <p className="font-normal">{t("StorePoint.produk")}</p>
                   </div>
                 </Card>
                 <Card shadow="sm" padding="50px" radius="32" withBorder>
                   <div className="flex flex-col justify-center items-center">
                     <h2 className="font-bold text-[#F29393]">35+</h2>
-                    <p className="font-normal text-sm">Skincare Brand</p>
+                    <p className="font-normal text-sm text-center">{t("StorePoint.brand")}</p>
                   </div>
                 </Card>
               </div>
@@ -31,13 +39,13 @@ function StorePoint() {
                 <Card shadow="sm" padding="50px" radius="32" withBorder>
                   <div className="flex flex-col justify-center items-center">
                     <h2 className="font-bold text-[#F29393]">15</h2>
-                    <p className="font-normal">Skincare Category</p>
+                    <p className="font-normal">{t("StorePoint.category")}</p>
                   </div>
                 </Card>
                 <Card shadow="sm" padding="50px" radius="32" withBorder>
                   <div className="flex flex-col justify-center items-center">
                     <h2 className="font-bold text-[#F29393]">2K+</h2>
-                    <p className="font-normal">Happy Customer</p>
+                    <p className="font-normal">{t("StorePoint.customer")}</p>
                   </div>
                 </Card>
               </div>
@@ -55,7 +63,7 @@ function StorePoint() {
                   />
                 </svg>
               </div>
-              <h2 className="font-bold text-xs lg:text-md">Discounted Price</h2>
+              <h2 className="font-bold text-xs lg:text-md">{t("StorePoint.discount")}</h2>
             </div>
 
             <img
