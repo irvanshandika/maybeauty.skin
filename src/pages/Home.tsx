@@ -7,6 +7,7 @@ import Produk from "@sections/Produk";
 import StorePoint from "@sections/StorePoint";
 import Testimoni from "@sections/Testimoni";
 import Location from "@sections/Location";
+import CtaSection from "@sections/CtaSection";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
@@ -32,6 +33,7 @@ function Home() {
       <StorePoint />
       <Testimoni />
       <Location />
+      <CtaSection />
     </>
   );
 }

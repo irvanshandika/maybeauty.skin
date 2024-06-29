@@ -49,5 +49,9 @@
     "location": "Location",
     "subjudul": "Go straight to the store",
     "address": "Jl. Timoho No.129, Demangan, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55221"
+  },
+  "CtaSection": {
+    "deskripsi": "The best skincare store in Yogyakarta that is cheap, complete and reliable.",
+    "ctaButton": "Get Now"
   }
 }

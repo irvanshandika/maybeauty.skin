@@ -49,5 +49,9 @@
     "location": "Lokasi",
     "subjudul": "Langsung ke toko aja",
     "address": "Jl. Timoho No.129, Demangan, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55221"
+  },
+  "CtaSection": {
+    "deskripsi": "Toko skincare terbaik di Yogyakarta yang murah, lengkap dan terpercaya.",
+    "ctaButton": "Dapatkan Sekarang"
   }
 }
