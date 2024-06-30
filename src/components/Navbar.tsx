@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu } from "@mantine/core";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation("global");
@@ -113,21 +114,18 @@ const Navbar = () => {
           </div>
           <div id="navbar-with-collapse" className="hidden transition-all duration-[0.1ms] overflow-hidden basis-full grow sm:block">
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-              <a className="font-medium text-blue-500" href="#" aria-current="page">
+              <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-500 font-medium" : "font-medium text-gray-600 hover:text-gray-400"}>
                 {t("Navbar.home")}
-              </a>
-              <a className="font-medium text-gray-600 hover:text-gray-400" href="#offers">
-              {t("Navbar.offers")}
-              </a>
-              <a className="font-medium text-gray-600 hover:text-gray-400" href="#produk">
-              {t("Navbar.product")}
-              </a>
-              <a className="font-medium text-gray-600 hover:text-gray-400" href="#location">
+              </NavLink>
+              <NavLink to="/produk" className={({ isActive }) => isActive ? "text-blue-500 font-medium" : "font-medium text-gray-600 hover:text-gray-400"}>
+                {t("Navbar.product")}
+              </NavLink>
+              <NavLink to="/location" className={({ isActive }) => isActive ? "text-blue-500 font-medium" : "font-medium text-gray-600 hover:text-gray-400"}>
                 {t("Navbar.location")}
-              </a>
-              <a className="font-medium text-gray-600 hover:text-gray-400" href="/ourteam">
-              {t("Navbar.ourteam")}
-              </a>
+              </NavLink>
+              <NavLink to="/ourteam" className={({ isActive }) => isActive ? "text-blue-500 font-medium" : "font-medium text-gray-600 hover:text-gray-400"}>
+                {t("Navbar.ourteam")}
+              </NavLink>
               <Menu shadow="md" width={200}>
                 <Menu.Target>
                   <button>{flags[selectedLanguage]}</button>

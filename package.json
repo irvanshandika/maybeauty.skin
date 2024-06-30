@@ -13,6 +13,7 @@
     "@mantine/carousel": "^7.11.0",
     "@mantine/core": "^7.11.0",
     "@mantine/hooks": "^7.11.0",
+    "@sentry/react": "^8.13.0",
     "@tabler/icons-react": "^3.7.0",
     "embla-carousel-react": "^7.1.0",
     "flowbite": "^2.4.1",
